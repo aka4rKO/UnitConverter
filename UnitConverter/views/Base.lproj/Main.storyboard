@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="EF8-vK-Snq">
             <objects>
                 <viewController id="vbG-Ep-FtR" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="seR-Kj-u57"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="v8I-W8-uDO"/>
+                    <tabBarItem key="tabBarItem" title="" image="temperature" id="v8I-W8-uDO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6g4-x1-yfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-361" y="915"/>
+            <point key="canvasLocation" x="122" y="923"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="wWD-2o-1HL">
             <objects>
                 <viewController id="Qx7-1G-B7p" sceneMemberID="viewController">
@@ -34,13 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="KVV-HR-NVM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="qaR-jW-Apt"/>
+                    <tabBarItem key="tabBarItem" title="" image="volume" id="qaR-jW-Apt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deM-uR-dKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1916" y="915"/>
+            <point key="canvasLocation" x="-1433" y="923"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="8Yr-1q-qK4">
             <objects>
                 <viewController id="7t2-YX-dd9" sceneMemberID="viewController">
@@ -50,13 +50,13 @@
                         <viewLayoutGuide key="safeArea" id="ONp-xw-1de"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="PPY-rT-KQQ"/>
+                    <tabBarItem key="tabBarItem" title="" image="weight" id="PPY-rT-KQQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbE-1z-urU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1129" y="915"/>
+            <point key="canvasLocation" x="-646" y="923"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="eBi-Td-FG8">
             <objects>
                 <viewController id="Z0g-vo-gkQ" sceneMemberID="viewController">
@@ -66,13 +66,13 @@
                         <viewLayoutGuide key="safeArea" id="8bn-Ee-GXI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fZM-Hb-Sri"/>
+                    <tabBarItem key="tabBarItem" title="" image="length" id="fZM-Hb-Sri"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMr-vk-R6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413" y="915"/>
+            <point key="canvasLocation" x="896" y="923"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="93B-Wj-Sbw">
             <objects>
                 <viewController id="5C2-br-ifW" sceneMemberID="viewController">
@@ -82,27 +82,11 @@
                         <viewLayoutGuide key="safeArea" id="VxK-wj-TlT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1JS-6b-uNR"/>
+                    <tabBarItem key="tabBarItem" title="" image="speed" id="1JS-6b-uNR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EkC-79-NOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1219" y="915"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="A63-ca-4yx">
-            <objects>
-                <viewController id="B4a-fL-CCd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zML-Th-4q8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wwl-6x-PfL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="bsh-w4-CL9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yxm-5z-d6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1978" y="915"/>
+            <point key="canvasLocation" x="1703" y="923"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fgg-zS-AUb">
@@ -118,7 +102,6 @@
                         <segue destination="vbG-Ep-FtR" kind="relationship" relationship="viewControllers" id="lpD-VA-IXd"/>
                         <segue destination="Z0g-vo-gkQ" kind="relationship" relationship="viewControllers" id="wZr-M9-gKf"/>
                         <segue destination="5C2-br-ifW" kind="relationship" relationship="viewControllers" id="4Wf-Ae-Ef0"/>
-                        <segue destination="B4a-fL-CCd" kind="relationship" relationship="viewControllers" id="ozJ-mH-WOE"/>
                         <segue destination="Qx7-1G-B7p" kind="relationship" relationship="viewControllers" id="182-m8-pOL"/>
                     </connections>
                 </tabBarController>
@@ -128,6 +111,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="length" width="35" height="35"/>
+        <image name="speed" width="35" height="35"/>
+        <image name="temperature" width="35" height="35"/>
+        <image name="volume" width="35" height="35"/>
+        <image name="weight" width="35" height="35"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
