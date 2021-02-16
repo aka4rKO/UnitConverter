@@ -8,21 +8,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Temperature-->
         <scene sceneID="EF8-vK-Snq">
             <objects>
-                <viewController id="vbG-Ep-FtR" sceneMemberID="viewController">
+                <viewController id="vbG-Ep-FtR" customClass="TemperatureViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hga-Q7-7mA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="seR-Kj-u57"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="temperature" id="v8I-W8-uDO"/>
+                    <navigationItem key="navigationItem" title="Temperature" id="sdR-OF-mEX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6g4-x1-yfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="923"/>
+            <point key="canvasLocation" x="122" y="1651"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wWD-2o-1HL">
@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMr-vk-R6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="923"/>
+            <point key="canvasLocation" x="1805.7971014492755" y="922.76785714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="93B-Wj-Sbw">
@@ -86,12 +86,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EkC-79-NOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="923"/>
+            <point key="canvasLocation" x="2613.04347826087" y="922.76785714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fgg-zS-AUb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hIG-Vx-1tW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Un5-yl-L56" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gua-nw-xvo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -100,14 +99,34 @@
                     </tabBar>
                     <connections>
                         <segue destination="7t2-YX-dd9" kind="relationship" relationship="viewControllers" id="XFt-dv-L2F"/>
-                        <segue destination="vbG-Ep-FtR" kind="relationship" relationship="viewControllers" id="lpD-VA-IXd"/>
+                        <segue destination="jL5-0Z-mDd" kind="relationship" relationship="viewControllers" id="lpD-VA-IXd"/>
                         <segue destination="Z0g-vo-gkQ" kind="relationship" relationship="viewControllers" id="wZr-M9-gKf"/>
                         <segue destination="5C2-br-ifW" kind="relationship" relationship="viewControllers" id="4Wf-Ae-Ef0"/>
                         <segue destination="Qx7-1G-B7p" kind="relationship" relationship="viewControllers" id="182-m8-pOL"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIG-Vx-1tW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136" y="169"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BNg-pI-6oi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jL5-0Z-mDd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="temperature" id="v8I-W8-uDO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lx4-L7-Wg0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vbG-Ep-FtR" kind="relationship" relationship="rootViewController" id="5yZ-9J-gm0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTi-ae-QzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="922.76785714285711"/>
         </scene>
     </scenes>
     <resources>
