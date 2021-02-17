@@ -71,7 +71,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="seR-Kj-u57"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="seR-Kj-u57" firstAttribute="trailing" secondItem="tm3-J3-ZiU" secondAttribute="trailing" constant="20" id="3Hp-Wn-nza"/>
                             <constraint firstItem="tm3-J3-ZiU" firstAttribute="leading" secondItem="seR-Kj-u57" secondAttribute="leading" constant="20" id="PXM-zS-zDt"/>
@@ -183,7 +183,7 @@ CExpdHJlIFN0YWNrIFZpZXc
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KVV-HR-NVM"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="M2U-Vf-g5q" firstAttribute="centerX" secondItem="UPr-cC-sY2" secondAttribute="centerX" id="E0S-2V-Yjf"/>
                             <constraint firstItem="KVV-HR-NVM" firstAttribute="trailing" secondItem="M2U-Vf-g5q" secondAttribute="trailing" constant="20" id="E8G-BL-Ijs"/>
@@ -316,7 +316,7 @@ CEdyYW0gU3RhY2sgVmlldw
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ONp-xw-1de"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="vRC-Qk-Ycq" firstAttribute="leading" secondItem="ONp-xw-1de" secondAttribute="leading" constant="20" id="DZ2-km-J2O"/>
                             <constraint firstItem="vRC-Qk-Ycq" firstAttribute="centerX" secondItem="IBN-Wf-0qJ" secondAttribute="centerX" id="eRU-Nu-LQr"/>
@@ -460,7 +460,7 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8bn-Ee-GXI"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="zDo-m2-LWm" firstAttribute="leading" secondItem="8bn-Ee-GXI" secondAttribute="leading" constant="20" id="QJY-ta-hXD"/>
                             <constraint firstItem="zDo-m2-LWm" firstAttribute="centerX" secondItem="vwV-rc-IAj" secondAttribute="centerX" id="agD-Da-FN6"/>
@@ -556,7 +556,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VxK-wj-TlT"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="Mjg-fd-FMX" firstAttribute="top" secondItem="VxK-wj-TlT" secondAttribute="top" constant="10" id="ACq-jp-aCC"/>
                             <constraint firstItem="VxK-wj-TlT" firstAttribute="trailing" secondItem="Mjg-fd-FMX" secondAttribute="trailing" constant="20" id="MVI-X7-SI0"/>
@@ -693,8 +693,8 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
         <image name="temperature" width="35" height="35"/>
         <image name="volume" width="35" height="35"/>
         <image name="weight" width="35" height="35"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
