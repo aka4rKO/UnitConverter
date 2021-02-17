@@ -79,7 +79,13 @@
                             <constraint firstItem="tm3-J3-ZiU" firstAttribute="top" secondItem="seR-Kj-u57" secondAttribute="top" constant="10" id="qk3-YG-kvQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Temperature" id="sdR-OF-mEX"/>
+                    <navigationItem key="navigationItem" title="Temperature" id="sdR-OF-mEX">
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="r7W-MV-RNi"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="gearshape" catalog="system" id="e3P-JK-ls4"/>
+                            <barButtonItem image="gobackward" catalog="system" id="e7F-4Q-OZ0"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6g4-x1-yfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +94,7 @@
         <!--Volume-->
         <scene sceneID="wWD-2o-1HL">
             <objects>
-                <viewController id="Qx7-1G-B7p" sceneMemberID="viewController">
+                <viewController id="Qx7-1G-B7p" customClass="VolumeViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UPr-cC-sY2">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,7 +197,13 @@ CExpdHJlIFN0YWNrIFZpZXc
                             <constraint firstItem="M2U-Vf-g5q" firstAttribute="top" secondItem="KVV-HR-NVM" secondAttribute="top" constant="10" id="d0d-Fh-5wD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Volume" id="a4w-xe-Otu"/>
+                    <navigationItem key="navigationItem" title="Volume" id="a4w-xe-Otu">
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="bqU-Xi-7YW"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="gearshape" catalog="system" id="6oj-K6-tuH"/>
+                            <barButtonItem image="gobackward" catalog="system" id="weN-zu-Wn1"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deM-uR-dKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +212,7 @@ CExpdHJlIFN0YWNrIFZpZXc
         <!--Weight-->
         <scene sceneID="8Yr-1q-qK4">
             <objects>
-                <viewController id="7t2-YX-dd9" sceneMemberID="viewController">
+                <viewController id="7t2-YX-dd9" customClass="WeightViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IBN-Wf-0qJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +336,13 @@ CEdyYW0gU3RhY2sgVmlldw
                             <constraint firstItem="vRC-Qk-Ycq" firstAttribute="top" secondItem="ONp-xw-1de" secondAttribute="top" constant="10" id="kIT-z2-mz5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Weight" id="LnD-f1-yq6"/>
+                    <navigationItem key="navigationItem" title="Weight" id="LnD-f1-yq6">
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="Bct-xc-OPB"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="gearshape" catalog="system" id="Ryc-4L-DBd"/>
+                            <barButtonItem image="gobackward" catalog="system" id="E26-rc-BAM"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbE-1z-urU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -333,7 +351,7 @@ CEdyYW0gU3RhY2sgVmlldw
         <!--Length-->
         <scene sceneID="eBi-Td-FG8">
             <objects>
-                <viewController id="Z0g-vo-gkQ" sceneMemberID="viewController">
+                <viewController id="Z0g-vo-gkQ" customClass="LengthViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vwV-rc-IAj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -468,7 +486,13 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                             <constraint firstItem="8bn-Ee-GXI" firstAttribute="trailing" secondItem="zDo-m2-LWm" secondAttribute="trailing" constant="20" id="pn8-Jm-rHa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Length" id="m5f-TB-udo"/>
+                    <navigationItem key="navigationItem" title="Length" id="m5f-TB-udo">
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="p1Q-83-bg6"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="gearshape" catalog="system" id="X7Y-2N-m8W"/>
+                            <barButtonItem image="gobackward" catalog="system" id="Gg8-CB-kkN"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMr-vk-R6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -477,7 +501,7 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
         <!--Speed-->
         <scene sceneID="93B-Wj-Sbw">
             <objects>
-                <viewController id="5C2-br-ifW" sceneMemberID="viewController">
+                <viewController id="5C2-br-ifW" customClass="SpeedViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lrz-MD-kkW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -564,7 +588,13 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                             <constraint firstItem="Mjg-fd-FMX" firstAttribute="centerX" secondItem="lrz-MD-kkW" secondAttribute="centerX" id="gx4-uS-xj0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Speed" id="GCp-dc-LSF"/>
+                    <navigationItem key="navigationItem" title="Speed" id="GCp-dc-LSF">
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="cCy-oD-auG"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="gearshape" catalog="system" id="JR8-Ih-5vT"/>
+                            <barButtonItem image="gobackward" catalog="system" id="8I4-7i-IW5"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EkC-79-NOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -688,6 +718,8 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="gobackward" catalog="system" width="121" height="128"/>
         <image name="length" width="35" height="35"/>
         <image name="speed" width="35" height="35"/>
         <image name="temperature" width="35" height="35"/>

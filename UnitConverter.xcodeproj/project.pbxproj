@@ -14,6 +14,12 @@
 		3718805325D9D11C002E0B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3718805225D9D11C002E0B77 /* Assets.xcassets */; };
 		3718805625D9D11C002E0B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */; };
 		372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */; };
+		37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D425DDD3EF003B663F /* SpeedViewController.swift */; };
+		37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D725DDD40E003B663F /* WeightViewController.swift */; };
+		37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274DA25DDD423003B663F /* VolumeViewController.swift */; };
+		37E274DE25DDD435003B663F /* LengthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274DD25DDD435003B663F /* LengthViewController.swift */; };
+		37E274E925DDD704003B663F /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274E725DDD704003B663F /* CustomKeyboard.swift */; };
+		37E274EA25DDD704003B663F /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E274E825DDD704003B663F /* CustomKeyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		3718805525D9D11C002E0B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3718805725D9D11C002E0B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		37E274D425DDD3EF003B663F /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
+		37E274D725DDD40E003B663F /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		37E274DA25DDD423003B663F /* VolumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeViewController.swift; sourceTree = "<group>"; };
+		37E274DD25DDD435003B663F /* LengthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthViewController.swift; sourceTree = "<group>"; };
+		37E274E725DDD704003B663F /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		37E274E825DDD704003B663F /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +84,13 @@
 		374A675125DBCCDE00703239 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				37E274E725DDD704003B663F /* CustomKeyboard.swift */,
 				3718804D25D9D11B002E0B77 /* ViewController.swift */,
 				372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */,
+				37E274D425DDD3EF003B663F /* SpeedViewController.swift */,
+				37E274D725DDD40E003B663F /* WeightViewController.swift */,
+				37E274DA25DDD423003B663F /* VolumeViewController.swift */,
+				37E274DD25DDD435003B663F /* LengthViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -83,6 +100,7 @@
 			children = (
 				3718804F25D9D11B002E0B77 /* Main.storyboard */,
 				3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */,
+				37E274E825DDD704003B663F /* CustomKeyboard.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -154,6 +172,7 @@
 				3718805625D9D11C002E0B77 /* LaunchScreen.storyboard in Resources */,
 				3718805325D9D11C002E0B77 /* Assets.xcassets in Resources */,
 				3718805125D9D11B002E0B77 /* Main.storyboard in Resources */,
+				37E274EA25DDD704003B663F /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E274E925DDD704003B663F /* CustomKeyboard.swift in Sources */,
+				37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */,
+				37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */,
 				3718804E25D9D11B002E0B77 /* ViewController.swift in Sources */,
+				37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */,
 				3718804A25D9D11B002E0B77 /* AppDelegate.swift in Sources */,
 				3718804C25D9D11B002E0B77 /* SceneDelegate.swift in Sources */,
+				37E274DE25DDD435003B663F /* LengthViewController.swift in Sources */,
 				372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
