@@ -9,6 +9,8 @@ import UIKit
 
 class LengthViewController: UIViewController {
 
+    @IBOutlet weak var keyboardView: CustomKeyboard!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
