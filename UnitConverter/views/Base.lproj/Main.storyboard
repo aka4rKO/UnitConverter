@@ -234,7 +234,11 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                                     <segue destination="trc-W6-djJ" kind="show" id="dgR-de-dHI"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="gearshape" catalog="system" id="0sM-Pe-eek"/>
+                            <barButtonItem image="gearshape" catalog="system" id="0sM-Pe-eek">
+                                <connections>
+                                    <segue destination="eOF-iC-gfb" kind="show" id="W2g-91-eSJ"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -420,7 +424,11 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                     <segue destination="trc-W6-djJ" kind="show" id="9tC-03-kKa"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="gearshape" catalog="system" id="foB-Bx-b7E"/>
+                            <barButtonItem image="gearshape" catalog="system" id="foB-Bx-b7E">
+                                <connections>
+                                    <segue destination="eOF-iC-gfb" kind="show" id="4PS-Cn-Taw"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -587,7 +595,11 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                     <segue destination="trc-W6-djJ" kind="show" id="yQv-0b-QBB"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="gearshape" catalog="system" id="4CW-X0-P5X"/>
+                            <barButtonItem image="gearshape" catalog="system" id="4CW-X0-P5X">
+                                <connections>
+                                    <segue destination="eOF-iC-gfb" kind="show" id="A0q-Kx-rHd"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -598,7 +610,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
             </objects>
             <point key="canvasLocation" x="2423" y="2014"/>
         </scene>
-        <!--History View Controller-->
+        <!--History-->
         <scene sceneID="acg-Hs-l6T">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="trc-W6-djJ" customClass="HistoryViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
@@ -608,11 +620,27 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                         <viewLayoutGuide key="safeArea" id="xNL-B6-RzZ"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kP6-JR-57l"/>
+                    <navigationItem key="navigationItem" title="History" id="kP6-JR-57l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7I-i3-zWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2422" y="2914"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="P1Y-gu-ufc">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="eOF-iC-gfb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ewW-kX-i1r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="47V-Du-pZR"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="bZq-iT-yoR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAR-ED-Sqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4142" y="2914"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pms-EO-3Bm">
@@ -827,7 +855,11 @@ CEdyYW0gU3RhY2sgVmlldw
                                     <segue destination="trc-W6-djJ" kind="show" id="ICo-B6-1dS"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="gearshape" catalog="system" id="bPQ-fj-YIc"/>
+                            <barButtonItem image="gearshape" catalog="system" id="bPQ-fj-YIc">
+                                <connections>
+                                    <segue destination="eOF-iC-gfb" kind="show" id="86W-OB-oyO"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -1030,7 +1062,11 @@ CExpdHJlIFN0YWNrIFZpZXc
                                     <segue destination="trc-W6-djJ" kind="show" id="d9t-Fm-Y9t"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="gearshape" catalog="system" id="Tkm-Dp-COb"/>
+                            <barButtonItem image="gearshape" catalog="system" id="Tkm-Dp-COb">
+                                <connections>
+                                    <segue destination="eOF-iC-gfb" kind="show" id="ejl-wU-6bA"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -1062,6 +1098,7 @@ CExpdHJlIFN0YWNrIFZpZXc
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="W2g-91-eSJ"/>
         <segue reference="dgR-de-dHI"/>
     </inferredMetricsTieBreakers>
     <resources>
