@@ -170,7 +170,7 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <constraints>
                                                             <constraint firstItem="uwL-yL-akh" firstAttribute="top" secondItem="4AS-SB-Kmb" secondAttribute="top" constant="20" id="FMV-pb-03f"/>
                                                             <constraint firstItem="uwL-yL-akh" firstAttribute="leading" secondItem="4AS-SB-Kmb" secondAttribute="leading" constant="20" id="pjg-bZ-hay"/>
@@ -189,7 +189,7 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                                                 </constraints>
                                             </scrollView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="iTI-d4-1jn" secondAttribute="trailing" id="Ezc-Jb-b2M"/>
                                             <constraint firstItem="iTI-d4-1jn" firstAttribute="top" secondItem="Say-Mr-lxD" secondAttribute="top" id="SfN-ax-TpY"/>
@@ -202,7 +202,7 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="rmh-kf-lwG" firstAttribute="leading" secondItem="Mjr-l2-f9g" secondAttribute="leading" id="5jq-Hn-uJg"/>
                                     <constraint firstItem="Say-Mr-lxD" firstAttribute="leading" secondItem="Mjr-l2-f9g" secondAttribute="leading" id="6q0-ct-oUz"/>
@@ -217,7 +217,7 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VdO-B0-vWj"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="VdO-B0-vWj" firstAttribute="bottom" secondItem="Mjr-l2-f9g" secondAttribute="bottom" id="GZr-wX-9Tx"/>
                             <constraint firstItem="Mjr-l2-f9g" firstAttribute="top" secondItem="VdO-B0-vWj" secondAttribute="top" id="REU-5N-mgx"/>
@@ -226,9 +226,14 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Length" id="ec6-bp-amb">
+                        <barButtonItem key="backBarButtonItem" title=" " id="xwx-fM-W4w"/>
                         <barButtonItem key="leftBarButtonItem" title="Save" id="PzM-PZ-nGR"/>
                         <rightBarButtonItems>
-                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="2gp-h5-kDE"/>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="2gp-h5-kDE">
+                                <connections>
+                                    <segue destination="trc-W6-djJ" kind="show" id="dgR-de-dHI"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="gearshape" catalog="system" id="0sM-Pe-eek"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -352,7 +357,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <constraints>
                                                             <constraint firstItem="WB1-fl-EMK" firstAttribute="leading" secondItem="BFs-kB-co8" secondAttribute="leading" constant="20" id="BPm-HX-c1T"/>
                                                             <constraint firstItem="WB1-fl-EMK" firstAttribute="top" secondItem="BFs-kB-co8" secondAttribute="top" constant="20" id="W2G-xu-Z9K"/>
@@ -370,7 +375,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                 </constraints>
                                             </scrollView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="13m-TK-QXC" firstAttribute="top" secondItem="j0D-tm-KmA" secondAttribute="top" id="D5f-FA-bef"/>
                                             <constraint firstAttribute="trailing" secondItem="13m-TK-QXC" secondAttribute="trailing" id="OcC-u6-ZlH"/>
@@ -383,7 +388,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="S5o-8x-4rZ" firstAttribute="top" secondItem="j0D-tm-KmA" secondAttribute="bottom" id="3Y1-jk-CSw"/>
                                     <constraint firstAttribute="trailing" secondItem="j0D-tm-KmA" secondAttribute="trailing" id="7jH-mX-7hS"/>
@@ -398,7 +403,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bPg-I7-feY"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="bPg-I7-feY" firstAttribute="bottom" secondItem="VUY-vj-pUh" secondAttribute="bottom" id="7J2-2a-66J"/>
                             <constraint firstItem="bPg-I7-feY" firstAttribute="trailing" secondItem="VUY-vj-pUh" secondAttribute="trailing" id="JPJ-oZ-6iX"/>
@@ -407,9 +412,14 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Speed" id="JAM-fn-hdL">
+                        <barButtonItem key="backBarButtonItem" title=" " id="7cB-6v-Juk"/>
                         <barButtonItem key="leftBarButtonItem" title="Save" id="umU-fe-tEw"/>
                         <rightBarButtonItems>
-                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZEz-Ya-PN9"/>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZEz-Ya-PN9">
+                                <connections>
+                                    <segue destination="trc-W6-djJ" kind="show" id="9tC-03-kKa"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="gearshape" catalog="system" id="foB-Bx-b7E"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -514,7 +524,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="3IY-M5-8bl" secondAttribute="trailing" constant="20" id="8Sq-sS-rs3"/>
                                                             <constraint firstItem="3IY-M5-8bl" firstAttribute="leading" secondItem="9XB-nh-YnY" secondAttribute="leading" constant="20" id="SfM-7z-w26"/>
@@ -532,7 +542,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                 </constraints>
                                             </scrollView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Gwy-JD-BfK" secondAttribute="trailing" id="BpS-tO-YfA"/>
                                             <constraint firstAttribute="bottom" secondItem="Gwy-JD-BfK" secondAttribute="bottom" id="Np5-6F-qqt"/>
@@ -545,7 +555,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="WoJ-3D-EJi" firstAttribute="top" secondItem="twX-3N-kbF" secondAttribute="top" id="3gL-Sy-FXF"/>
                                     <constraint firstItem="SgI-OD-NJc" firstAttribute="top" secondItem="WoJ-3D-EJi" secondAttribute="bottom" id="9U8-ms-xkM"/>
@@ -560,7 +570,7 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rzQ-Eh-Qgv"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="rzQ-Eh-Qgv" firstAttribute="trailing" secondItem="twX-3N-kbF" secondAttribute="trailing" id="4GM-O4-eKr"/>
                             <constraint firstItem="twX-3N-kbF" firstAttribute="leading" secondItem="rzQ-Eh-Qgv" secondAttribute="leading" id="JvH-ZG-Wr3"/>
@@ -569,9 +579,14 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Temperature" id="TDC-IW-deU">
+                        <barButtonItem key="backBarButtonItem" title=" " id="L7v-W4-fcm"/>
                         <barButtonItem key="leftBarButtonItem" title="Save" id="k1C-ug-jXf"/>
                         <rightBarButtonItems>
-                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZHD-dK-eOB"/>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZHD-dK-eOB">
+                                <connections>
+                                    <segue destination="trc-W6-djJ" kind="show" id="yQv-0b-QBB"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="gearshape" catalog="system" id="4CW-X0-P5X"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -582,6 +597,22 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yn6-6s-WsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2423" y="2014"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="acg-Hs-l6T">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="trc-W6-djJ" customClass="HistoryViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uq3-Up-jO9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xNL-B6-RzZ"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kP6-JR-57l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7I-i3-zWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="2914"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pms-EO-3Bm">
@@ -732,7 +763,7 @@ CEdyYW0gU3RhY2sgVmlldw
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="HWk-Gp-9tG" secondAttribute="trailing" constant="20" id="1d4-O4-35R"/>
                                                             <constraint firstItem="HWk-Gp-9tG" firstAttribute="top" secondItem="MLW-vW-g3s" secondAttribute="top" constant="20" id="WQQ-0j-CT8"/>
@@ -751,7 +782,7 @@ CEdyYW0gU3RhY2sgVmlldw
                                                 </constraints>
                                             </scrollView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="YQ4-p8-XaA" firstAttribute="leading" secondItem="JwS-nx-Uz4" secondAttribute="leading" id="Ckc-pr-lHn"/>
                                             <constraint firstItem="YQ4-p8-XaA" firstAttribute="top" secondItem="JwS-nx-Uz4" secondAttribute="top" id="Xe7-Ga-md1"/>
@@ -764,7 +795,7 @@ CEdyYW0gU3RhY2sgVmlldw
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="WQG-Ce-JPA" firstAttribute="height" secondItem="JwS-nx-Uz4" secondAttribute="height" multiplier="0.7" id="0g5-hP-sfb"/>
                                     <constraint firstItem="JwS-nx-Uz4" firstAttribute="top" secondItem="y9J-G5-Bsz" secondAttribute="top" id="8Uj-7J-FAR"/>
@@ -779,7 +810,7 @@ CEdyYW0gU3RhY2sgVmlldw
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fPG-dR-bm5"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="fPG-dR-bm5" firstAttribute="trailing" secondItem="y9J-G5-Bsz" secondAttribute="trailing" id="Ffi-uJ-Hw4"/>
                             <constraint firstItem="fPG-dR-bm5" firstAttribute="bottom" secondItem="y9J-G5-Bsz" secondAttribute="bottom" id="LE2-fJ-sbs"/>
@@ -788,9 +819,14 @@ CEdyYW0gU3RhY2sgVmlldw
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Weight" id="pWT-QS-HWV">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Gze-0F-TRg"/>
                         <barButtonItem key="leftBarButtonItem" title="Save" id="zvi-fh-O0m"/>
                         <rightBarButtonItems>
-                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="lYe-qX-Jmb"/>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="lYe-qX-Jmb">
+                                <connections>
+                                    <segue destination="trc-W6-djJ" kind="show" id="ICo-B6-1dS"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="gearshape" catalog="system" id="bPQ-fj-YIc"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -930,7 +966,7 @@ CExpdHJlIFN0YWNrIFZpZXc
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <constraints>
                                                             <constraint firstItem="uCH-cZ-09B" firstAttribute="top" secondItem="ePz-Lr-xob" secondAttribute="top" constant="20" id="6tM-AT-ftk"/>
                                                             <constraint firstAttribute="bottom" secondItem="uCH-cZ-09B" secondAttribute="bottom" constant="20" id="Y4i-kp-5rO"/>
@@ -949,7 +985,7 @@ CExpdHJlIFN0YWNrIFZpZXc
                                                 </constraints>
                                             </scrollView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="5sw-e0-ymL" secondAttribute="trailing" id="0BH-Mu-IcE"/>
                                             <constraint firstAttribute="bottom" secondItem="5sw-e0-ymL" secondAttribute="bottom" id="H26-mQ-kFA"/>
@@ -962,7 +998,7 @@ CExpdHJlIFN0YWNrIFZpZXc
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="gWA-Cc-Rsa" firstAttribute="leading" secondItem="5tt-hF-51f" secondAttribute="leading" id="Qpb-m7-3GT"/>
                                     <constraint firstAttribute="bottom" secondItem="sm4-JV-ERl" secondAttribute="bottom" id="TiD-0k-JmN"/>
@@ -977,7 +1013,7 @@ CExpdHJlIFN0YWNrIFZpZXc
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CXr-uj-iTH"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="5tt-hF-51f" firstAttribute="leading" secondItem="CXr-uj-iTH" secondAttribute="leading" id="1HV-Xe-eFr"/>
                             <constraint firstItem="5tt-hF-51f" firstAttribute="top" secondItem="CXr-uj-iTH" secondAttribute="top" id="4v8-76-aQc"/>
@@ -986,9 +1022,14 @@ CExpdHJlIFN0YWNrIFZpZXc
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Volume" id="bAc-2B-pqS">
+                        <barButtonItem key="backBarButtonItem" title=" " id="hPK-Ye-wMd"/>
                         <barButtonItem key="leftBarButtonItem" title="Save" id="Iut-Nu-NG2"/>
                         <rightBarButtonItems>
-                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="R2L-iL-0J0"/>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="R2L-iL-0J0">
+                                <connections>
+                                    <segue destination="trc-W6-djJ" kind="show" id="d9t-Fm-Y9t"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="gearshape" catalog="system" id="Tkm-Dp-COb"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -1020,6 +1061,9 @@ CExpdHJlIFN0YWNrIFZpZXc
             <point key="canvasLocation" x="4143" y="1057"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dgR-de-dHI"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
@@ -1028,8 +1072,8 @@ CExpdHJlIFN0YWNrIFZpZXc
         <image name="temperature" width="35" height="35"/>
         <image name="volume" width="35" height="35"/>
         <image name="weight" width="35" height="35"/>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
