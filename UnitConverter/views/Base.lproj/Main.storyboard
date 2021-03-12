@@ -228,8 +228,8 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                     <navigationItem key="navigationItem" title="Length" id="ec6-bp-amb">
                         <barButtonItem key="leftBarButtonItem" title="Save" id="PzM-PZ-nGR"/>
                         <rightBarButtonItems>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="2gp-h5-kDE"/>
                             <barButtonItem image="gearshape" catalog="system" id="0sM-Pe-eek"/>
-                            <barButtonItem image="gobackward" catalog="system" id="2gp-h5-kDE"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -409,8 +409,8 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                     <navigationItem key="navigationItem" title="Speed" id="JAM-fn-hdL">
                         <barButtonItem key="leftBarButtonItem" title="Save" id="umU-fe-tEw"/>
                         <rightBarButtonItems>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZEz-Ya-PN9"/>
                             <barButtonItem image="gearshape" catalog="system" id="foB-Bx-b7E"/>
-                            <barButtonItem image="gobackward" catalog="system" id="ZEz-Ya-PN9"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -571,8 +571,8 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                     <navigationItem key="navigationItem" title="Temperature" id="TDC-IW-deU">
                         <barButtonItem key="leftBarButtonItem" title="Save" id="k1C-ug-jXf"/>
                         <rightBarButtonItems>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZHD-dK-eOB"/>
                             <barButtonItem image="gearshape" catalog="system" id="4CW-X0-P5X"/>
-                            <barButtonItem image="gobackward" catalog="system" id="ZHD-dK-eOB"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -790,8 +790,8 @@ CEdyYW0gU3RhY2sgVmlldw
                     <navigationItem key="navigationItem" title="Weight" id="pWT-QS-HWV">
                         <barButtonItem key="leftBarButtonItem" title="Save" id="zvi-fh-O0m"/>
                         <rightBarButtonItems>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="lYe-qX-Jmb"/>
                             <barButtonItem image="gearshape" catalog="system" id="bPQ-fj-YIc"/>
-                            <barButtonItem image="gobackward" catalog="system" id="lYe-qX-Jmb"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -988,8 +988,8 @@ CExpdHJlIFN0YWNrIFZpZXc
                     <navigationItem key="navigationItem" title="Volume" id="bAc-2B-pqS">
                         <barButtonItem key="leftBarButtonItem" title="Save" id="Iut-Nu-NG2"/>
                         <rightBarButtonItems>
+                            <barButtonItem image="clock.arrow.circlepath" catalog="system" id="R2L-iL-0J0"/>
                             <barButtonItem image="gearshape" catalog="system" id="Tkm-Dp-COb"/>
-                            <barButtonItem image="gobackward" catalog="system" id="R2L-iL-0J0"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -1021,8 +1021,8 @@ CExpdHJlIFN0YWNrIFZpZXc
         </scene>
     </scenes>
     <resources>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
-        <image name="gobackward" catalog="system" width="121" height="128"/>
         <image name="length" width="35" height="35"/>
         <image name="speed" width="35" height="35"/>
         <image name="temperature" width="35" height="35"/>
