@@ -18,11 +18,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="hBw-4X-mAF" kind="relationship" relationship="viewControllers" id="fJ7-r1-G9B"/>
+                        <segue destination="6al-tj-3id" kind="relationship" relationship="viewControllers" id="BJJ-Fy-rBp"/>
+                        <segue destination="8jE-UM-dl4" kind="relationship" relationship="viewControllers" id="gV2-iB-h6c"/>
                         <segue destination="orN-QF-fk8" kind="relationship" relationship="viewControllers" id="EkV-sq-a2L"/>
                         <segue destination="luY-2j-9aj" kind="relationship" relationship="viewControllers" id="LVN-ff-2e2"/>
-                        <segue destination="6al-tj-3id" kind="relationship" relationship="viewControllers" id="BJJ-Fy-rBp"/>
-                        <segue destination="hBw-4X-mAF" kind="relationship" relationship="viewControllers" id="fJ7-r1-G9B"/>
-                        <segue destination="8jE-UM-dl4" kind="relationship" relationship="viewControllers" id="gV2-iB-h6c"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIG-Vx-1tW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
