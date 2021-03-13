@@ -15,6 +15,7 @@
 		3718805625D9D11C002E0B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */; };
 		372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */; };
 		37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */; };
+		37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */; };
 		37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D425DDD3EF003B663F /* SpeedViewController.swift */; };
 		37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D725DDD40E003B663F /* WeightViewController.swift */; };
 		37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274DA25DDD423003B663F /* VolumeViewController.swift */; };
@@ -34,6 +35,7 @@
 		3718805725D9D11C002E0B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		37E274D425DDD3EF003B663F /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		37E274D725DDD40E003B663F /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		37E274DA25DDD423003B663F /* VolumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				37E274DA25DDD423003B663F /* VolumeViewController.swift */,
 				37E274DD25DDD435003B663F /* LengthViewController.swift */,
 				37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */,
+				37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				37E274E925DDD704003B663F /* CustomKeyboard.swift in Sources */,
 				37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */,
+				37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */,
 				37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */,
 				37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */,
 				3718804E25D9D11B002E0B77 /* ViewController.swift in Sources */,
