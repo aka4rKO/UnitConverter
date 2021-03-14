@@ -11,58 +11,79 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
-    let cars = ["Tesla", "Nissan", "Lambo", "Jeep"]
-    let fruits = ["Banana", "Papaya", "Grapes"]
+    var data = [[String]]()
+    var dataHeadings = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.tableFooterView = UIView()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        // TODO change the data
+        self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"]]
+        self.dataHeadings = ["JH", "QW", "RR"]
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if self.data.count == 0 {
+            self.tableView.setEmptyMessage("No conversions are saved!")
+        } else {
+            self.tableView.restore()
+        }
+        
+        return self.data.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            return cars.count
-        case 1:
-            return fruits.count
-        case 2:
-            return cars.count
-        case 3:
-            return fruits.count
-        case 4:
-            return 0
-        default:
-            break
-        }
-        
-        return 0
+        return self.data[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            cell.textLabel?.text = cars[indexPath.row]
-        case 1:
-            cell.textLabel?.text = fruits[indexPath.row]
-        case 2:
-            cell.textLabel?.text = cars[indexPath.row]
-        case 3:
-            cell.textLabel?.text = fruits[indexPath.row]
-        case 4:
-            return cell
-        default:
-            break
-        }
-        
+        cell.textLabel?.text = self.dataHeadings[indexPath.row]
+        cell.detailTextLabel?.text = self.data[indexPath.section][indexPath.row]
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var sectionHeadings = [String]()
+        
+        for (idx, _) in self.data.enumerated() {
+            sectionHeadings.append("Conversion \(idx + 1)")
+        }
+        
+        if section < sectionHeadings.count {
+            return sectionHeadings[section]
+        }
+
+        return nil
+    }
+    
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
-        tableView.reloadData()
+        // TODO change the data
+        switch self.segmentedControl.selectedSegmentIndex {
+        case 0:
+            self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"]]
+            self.dataHeadings = ["JH", "QW", "RR"]
+        case 1:
+            self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"]]
+            self.dataHeadings = ["NB", "IU", "FY"]
+        case 2:
+            self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"]]
+            self.dataHeadings = ["AL", "HG", "TM"]
+        case 3:
+            self.data = [["0,0", "0,1", "0,2", "0,5"]]
+            self.dataHeadings = ["UY", "CS", "LO", "II"]
+        case 4:
+            self.data = []
+            self.dataHeadings = []
+        default:
+            self.data = []
+            self.dataHeadings = []
+        }
+        
+        self.tableView.reloadData()
     }
 
 }

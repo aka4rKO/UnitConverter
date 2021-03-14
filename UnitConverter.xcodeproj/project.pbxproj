@@ -14,6 +14,7 @@
 		3718805325D9D11C002E0B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3718805225D9D11C002E0B77 /* Assets.xcassets */; };
 		3718805625D9D11C002E0B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */; };
 		372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */; };
+		379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */; };
 		37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */; };
 		37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */; };
 		37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D425DDD3EF003B663F /* SpeedViewController.swift */; };
@@ -34,6 +35,7 @@
 		3718805525D9D11C002E0B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3718805725D9D11C002E0B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		37E274D425DDD3EF003B663F /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +76,10 @@
 		3718804825D9D11B002E0B77 /* UnitConverter */ = {
 			isa = PBXGroup;
 			children = (
-				374A675325DBCCFA00703239 /* models */,
-				374A675225DBCCF000703239 /* views */,
-				374A675125DBCCDE00703239 /* controllers */,
+				379D86D825FEBC4C00FEACD1 /* Extensions */,
+				374A675325DBCCFA00703239 /* Models */,
+				374A675225DBCCF000703239 /* Views */,
+				374A675125DBCCDE00703239 /* Controllers */,
 				3718804925D9D11B002E0B77 /* AppDelegate.swift */,
 				3718804B25D9D11B002E0B77 /* SceneDelegate.swift */,
 				3718805225D9D11C002E0B77 /* Assets.xcassets */,
@@ -85,7 +88,7 @@
 			path = UnitConverter;
 			sourceTree = "<group>";
 		};
-		374A675125DBCCDE00703239 /* controllers */ = {
+		374A675125DBCCDE00703239 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				37E274E725DDD704003B663F /* CustomKeyboard.swift */,
@@ -98,24 +101,32 @@
 				37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */,
 				37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */,
 			);
-			path = controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		374A675225DBCCF000703239 /* views */ = {
+		374A675225DBCCF000703239 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3718804F25D9D11B002E0B77 /* Main.storyboard */,
 				3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */,
 				37E274E825DDD704003B663F /* CustomKeyboard.xib */,
 			);
-			path = views;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		374A675325DBCCFA00703239 /* models */ = {
+		374A675325DBCCFA00703239 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		379D86D825FEBC4C00FEACD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E274E925DDD704003B663F /* CustomKeyboard.swift in Sources */,
+				379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */,
 				37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */,
 				37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */,
 				37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */,
