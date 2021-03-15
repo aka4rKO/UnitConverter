@@ -494,6 +494,9 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                                                 <rect key="frame" x="0.0" y="28.333333333333343" width="374" height="34"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
+                                                                                <connections>
+                                                                                    <action selector="onTfValueChanged:" destination="wGk-ac-n3k" eventType="editingChanged" id="n2m-AQ-R53"/>
+                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -506,10 +509,13 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvC-el-GbI">
+                                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvC-el-GbI">
                                                                                 <rect key="frame" x="0.0" y="28.333333333333314" width="374" height="34"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
+                                                                                <connections>
+                                                                                    <action selector="onTfValueChanged:" destination="wGk-ac-n3k" eventType="editingChanged" id="88G-Rl-Vxl"/>
+                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -522,10 +528,14 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U2M-xj-NIU">
+                                                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U2M-xj-NIU">
                                                                                 <rect key="frame" x="0.0" y="28.333333333333314" width="374" height="34"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
+                                                                                <connections>
+                                                                                    <action selector="onTfValueChanged:" destination="wGk-ac-n3k" eventType="editingChanged" id="iYO-s2-Jq4"/>
+                                                                                    <action selector="onTfValueChanged:" destination="wGk-ac-n3k" eventType="valueChanged" id="r8y-f7-SXI"/>
+                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -603,6 +613,9 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="celciusTf" destination="Evx-6w-zO2" id="lSc-5n-HaZ"/>
+                        <outlet property="fahrenheitTf" destination="qvC-el-GbI" id="re6-hd-kkw"/>
+                        <outlet property="kelvinTf" destination="U2M-xj-NIU" id="fy9-3A-PkB"/>
                         <outlet property="keyboardView" destination="SgI-OD-NJc" id="mRI-Sa-9NF"/>
                     </connections>
                 </viewController>
@@ -1253,8 +1266,8 @@ CExpdHJlIFN0YWNrIFZpZXc
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ejl-wU-6bA"/>
-        <segue reference="d9t-Fm-Y9t"/>
+        <segue reference="A0q-Kx-rHd"/>
+        <segue reference="yQv-0b-QBB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>

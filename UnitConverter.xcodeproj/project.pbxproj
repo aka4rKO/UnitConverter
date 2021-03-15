@@ -14,7 +14,9 @@
 		3718805325D9D11C002E0B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3718805225D9D11C002E0B77 /* Assets.xcassets */; };
 		3718805625D9D11C002E0B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */; };
 		372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */; };
+		374B0C8B25FFE557007C1E04 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B0C8A25FFE557007C1E04 /* Utils.swift */; };
 		379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */; };
+		379D86DD25FEC79B00FEACD1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86DC25FEC79B00FEACD1 /* Temperature.swift */; };
 		37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */; };
 		37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */; };
 		37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D425DDD3EF003B663F /* SpeedViewController.swift */; };
@@ -35,7 +37,9 @@
 		3718805525D9D11C002E0B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3718805725D9D11C002E0B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		374B0C8A25FFE557007C1E04 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
+		379D86DC25FEC79B00FEACD1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		37E274D425DDD3EF003B663F /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				37E274DD25DDD435003B663F /* LengthViewController.swift */,
 				37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */,
 				37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */,
+				374B0C8A25FFE557007C1E04 /* Utils.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 		374A675325DBCCFA00703239 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				379D86DC25FEC79B00FEACD1 /* Temperature.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,12 +209,14 @@
 				37E274E925DDD704003B663F /* CustomKeyboard.swift in Sources */,
 				379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */,
 				37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */,
+				374B0C8B25FFE557007C1E04 /* Utils.swift in Sources */,
 				37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */,
 				37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */,
 				37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */,
 				3718804E25D9D11B002E0B77 /* ViewController.swift in Sources */,
 				37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */,
 				3718804A25D9D11B002E0B77 /* AppDelegate.swift in Sources */,
+				379D86DD25FEC79B00FEACD1 /* Temperature.swift in Sources */,
 				3718804C25D9D11B002E0B77 /* SceneDelegate.swift in Sources */,
 				37E274DE25DDD435003B663F /* LengthViewController.swift in Sources */,
 				372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */,

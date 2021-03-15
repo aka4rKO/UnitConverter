@@ -14,7 +14,6 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     var data = [[String]]()
     var dataHeadings = [String]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
