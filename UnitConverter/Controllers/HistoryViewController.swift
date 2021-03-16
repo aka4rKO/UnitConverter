@@ -7,20 +7,23 @@
 
 import UIKit
 
+enum TabbarItems: Int {
+    case weight, temperature, liquidVolume, length, speed
+}
+
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     var data = [[String]]()
     var dataHeadings = [String]()
+    var segmentIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        // TODO change the data
-        self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"]]
-        self.dataHeadings = ["JH", "QW", "RR"]
+        self.segmentedControl.selectedSegmentIndex = self.segmentIndex
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,21 +63,21 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
-        // TODO change the data
         switch self.segmentedControl.selectedSegmentIndex {
-        case 0:
+        case TabbarItems.weight.rawValue:
             self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"]]
             self.dataHeadings = ["JH", "QW", "RR"]
-        case 1:
-            self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"]]
-            self.dataHeadings = ["NB", "IU", "FY"]
-        case 2:
+        case TabbarItems.temperature.rawValue:
+            let history = Utils.defaults.object(forKey: "TemparatureHistory") as? [[String]] ?? [[String]]()
+            self.data = history.suffix(5)
+            self.dataHeadings = Temperature.fields
+        case TabbarItems.liquidVolume.rawValue:
             self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"]]
             self.dataHeadings = ["AL", "HG", "TM"]
-        case 3:
+        case TabbarItems.length.rawValue:
             self.data = [["0,0", "0,1", "0,2", "0,5"]]
             self.dataHeadings = ["UY", "CS", "LO", "II"]
-        case 4:
+        case TabbarItems.speed.rawValue:
             self.data = []
             self.dataHeadings = []
         default:

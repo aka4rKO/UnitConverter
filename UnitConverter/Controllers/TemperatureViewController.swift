@@ -29,6 +29,15 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
         self.loadDefaultsData("TemparatureHistory")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TemperatureVCToHistoryVC" {
+            let historyVC = segue.destination as! HistoryViewController
+            historyVC.data = temperature.historyString2DArray.suffix(5)
+            historyVC.dataHeadings = Temperature.fields
+            historyVC.segmentIndex = 1
+        }
+    }
+    
     func loadDefaultsData(_ historyKey: String) {
         self.temperature.historyString2DArray = Utils.defaults.object(forKey: historyKey) as? [[String]] ?? [[String]]()
     }
@@ -76,9 +85,7 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
     @IBAction func saveBtn(_ sender: UIBarButtonItem) {
-        print("before save:", temperature.historyString2DArray)
         if self.celciusTf.text!.isEmpty {
             showToast("Cannot save empty fields!")
         } else {
@@ -92,6 +99,10 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
             Utils.defaults.set(temperature.historyString2DArray, forKey: "TemparatureHistory")
             showToast("Conversion saved!")
         }
-        print("before save:", temperature.historyString2DArray)
     }
+    
+    @IBAction func historyTapped(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "TemperatureVCToHistoryVC", sender: self)
+    }
+    
 }

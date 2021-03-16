@@ -606,7 +606,8 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                         <rightBarButtonItems>
                             <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZHD-dK-eOB">
                                 <connections>
-                                    <segue destination="trc-W6-djJ" kind="show" id="yQv-0b-QBB"/>
+                                    <action selector="historyTapped:" destination="wGk-ac-n3k" id="mAr-Gd-43Q"/>
+                                    <segue destination="trc-W6-djJ" kind="show" identifier="TemperatureVCToHistoryVC" id="yQv-0b-QBB"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="gearshape" catalog="system" id="4CW-X0-P5X">
