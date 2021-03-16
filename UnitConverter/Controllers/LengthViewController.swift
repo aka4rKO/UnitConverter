@@ -74,12 +74,12 @@ class LengthViewController: UIViewController, UITextFieldDelegate {
             switch LengthUnits(rawValue: sender.tag)! {
             case .metre:
                 self.length.metre = doubleTextFieldValue
-                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1000)
+                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1609)
+                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 100)
+                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1000)
+                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.094)
+                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 39.37)
                 
                 self.kilometreTf.text = "\(self.length.kilometre)"
                 self.mileTf.text = "\(self.length.mile)"
@@ -88,13 +88,13 @@ class LengthViewController: UIViewController, UITextFieldDelegate {
                 self.yardTf.text = "\(self.length.yard)"
                 self.inchTf.text = "\(self.length.inch)"
             case .kilometre:
-                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1000)
                 self.length.kilometre = doubleTextFieldValue
-                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.609)
+                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 100000)
+                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1000000)
+                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1094)
+                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 39370)
                 
                 self.metreTf.text = "\(self.length.metre)"
                 self.mileTf.text = "\(self.length.mile)"
@@ -103,13 +103,13 @@ class LengthViewController: UIViewController, UITextFieldDelegate {
                 self.yardTf.text = "\(self.length.yard)"
                 self.inchTf.text = "\(self.length.inch)"
             case .mile:
-                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1609)
+                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.609)
                 self.length.mile = doubleTextFieldValue
-                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 160934)
+                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.609e+6)
+                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 63360)
+                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1760)
                 
                 self.metreTf.text = "\(self.length.metre)"
                 self.kilometreTf.text = "\(self.length.kilometre)"
@@ -118,13 +118,13 @@ class LengthViewController: UIViewController, UITextFieldDelegate {
                 self.yardTf.text = "\(self.length.yard)"
                 self.inchTf.text = "\(self.length.inch)"
             case .centimetre:
-                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 100)
+                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 100000)
+                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 160934)
                 self.length.centimetre = doubleTextFieldValue
-                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 10)
+                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 91.44)
+                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 2.54)
                 
                 self.metreTf.text = "\(self.length.metre)"
                 self.kilometreTf.text = "\(self.length.kilometre)"
@@ -133,13 +133,13 @@ class LengthViewController: UIViewController, UITextFieldDelegate {
                 self.yardTf.text = "\(self.length.yard)"
                 self.inchTf.text = "\(self.length.inch)"
             case .millimetre:
-                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1000)
+                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1e+6)
+                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.609e+6)
+                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 10)
                 self.length.millimetre = doubleTextFieldValue
-                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 914)
+                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 25.4)
                 
                 self.metreTf.text = "\(self.length.metre)"
                 self.kilometreTf.text = "\(self.length.kilometre)"
@@ -148,13 +148,13 @@ class LengthViewController: UIViewController, UITextFieldDelegate {
                 self.yardTf.text = "\(self.length.yard)"
                 self.inchTf.text = "\(self.length.inch)"
             case .yard:
-                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.094)
+                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1094)
+                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1760)
+                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 91.44)
+                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 914)
                 self.length.yard = doubleTextFieldValue
-                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.inch = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 36)
                 
                 self.metreTf.text = "\(self.length.metre)"
                 self.kilometreTf.text = "\(self.length.kilometre)"
@@ -163,12 +163,12 @@ class LengthViewController: UIViewController, UITextFieldDelegate {
                 self.millimetreTf.text = "\(self.length.millimetre)"
                 self.inchTf.text = "\(self.length.inch)"
             case .inch:
-                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
-                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue)
+                self.length.metre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 39.37)
+                self.length.kilometre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 39370)
+                self.length.mile = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 63360)
+                self.length.centimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 2.54)
+                self.length.millimetre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 25.4)
+                self.length.yard = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 36)
                 self.length.inch = doubleTextFieldValue
                 
                 self.metreTf.text = "\(self.length.metre)"
