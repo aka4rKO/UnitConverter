@@ -15,6 +15,7 @@
 		3718805625D9D11C002E0B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */; };
 		372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */; };
 		374B0C8B25FFE557007C1E04 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B0C8A25FFE557007C1E04 /* Utils.swift */; };
+		3769CA32260053FA00502052 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769CA31260053FA00502052 /* UIViewController+Toast.swift */; };
 		379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */; };
 		379D86DD25FEC79B00FEACD1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86DC25FEC79B00FEACD1 /* Temperature.swift */; };
 		37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */; };
@@ -38,6 +39,7 @@
 		3718805725D9D11C002E0B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		374B0C8A25FFE557007C1E04 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3769CA31260053FA00502052 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		379D86DC25FEC79B00FEACD1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +82,6 @@
 		3718804825D9D11B002E0B77 /* UnitConverter */ = {
 			isa = PBXGroup;
 			children = (
-				379D86D825FEBC4C00FEACD1 /* Extensions */,
 				374A675325DBCCFA00703239 /* Models */,
 				374A675225DBCCF000703239 /* Views */,
 				374A675125DBCCDE00703239 /* Controllers */,
@@ -112,6 +113,7 @@
 		374A675225DBCCF000703239 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				379D86D825FEBC4C00FEACD1 /* Extensions */,
 				3718804F25D9D11B002E0B77 /* Main.storyboard */,
 				3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */,
 				37E274E825DDD704003B663F /* CustomKeyboard.xib */,
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */,
+				3769CA31260053FA00502052 /* UIViewController+Toast.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */,
 				3718804E25D9D11B002E0B77 /* ViewController.swift in Sources */,
 				37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */,
+				3769CA32260053FA00502052 /* UIViewController+Toast.swift in Sources */,
 				3718804A25D9D11B002E0B77 /* AppDelegate.swift in Sources */,
 				379D86DD25FEC79B00FEACD1 /* Temperature.swift in Sources */,
 				3718804C25D9D11B002E0B77 /* SceneDelegate.swift in Sources */,

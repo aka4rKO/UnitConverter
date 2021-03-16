@@ -598,7 +598,11 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                     </view>
                     <navigationItem key="navigationItem" title="Temperature" id="TDC-IW-deU">
                         <barButtonItem key="backBarButtonItem" title=" " id="L7v-W4-fcm"/>
-                        <barButtonItem key="leftBarButtonItem" title="Save" id="k1C-ug-jXf"/>
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="k1C-ug-jXf">
+                            <connections>
+                                <action selector="saveBtn:" destination="wGk-ac-n3k" id="B0h-7F-mqL"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="clock.arrow.circlepath" catalog="system" id="ZHD-dK-eOB">
                                 <connections>

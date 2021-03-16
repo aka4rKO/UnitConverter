@@ -23,4 +23,8 @@ class Utils {
         return roundedNumber
     }
     
+    static func roundToSpecifiedDecimalPlaces(_ value: String?) -> String {
+        return String(roundToSpecifiedDecimalPlaces(Double(value!)!))
+    }
+    
 }

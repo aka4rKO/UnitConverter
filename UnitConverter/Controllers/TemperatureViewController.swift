@@ -18,7 +18,7 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var kelvinTf: UITextField!
     @IBOutlet weak var keyboardView: CustomKeyboard!
     
-    var temperature : Temperature = Temperature(celcius: 0.0, fahrenheit: 0.0, kelvin: 0.0)
+    var temperature: Temperature = Temperature(celcius: 0.0, fahrenheit: 0.0, kelvin: 0.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,8 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
         self.loadDefaultsData("TemparatureHistory")
     }
     
-    func loadDefaultsData(_ historyKey :String) {
-        let defaults = UserDefaults.standard
-        self.temperature.historyString2DArray = defaults.object(forKey: historyKey) as? [[String]] ?? [[String]]()
+    func loadDefaultsData(_ historyKey: String) {
+        self.temperature.historyString2DArray = Utils.defaults.object(forKey: historyKey) as? [[String]] ?? [[String]]()
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -75,5 +74,24 @@ class TemperatureViewController: UIViewController, UITextFieldDelegate {
         } else {
             self.emptyAllTfs()
         }
+    }
+    
+    
+    @IBAction func saveBtn(_ sender: UIBarButtonItem) {
+        print("before save:", temperature.historyString2DArray)
+        if self.celciusTf.text!.isEmpty {
+            showToast("Cannot save empty fields!")
+        } else {
+            let history: [String] = [
+                Utils.roundToSpecifiedDecimalPlaces(self.celciusTf.text),
+                Utils.roundToSpecifiedDecimalPlaces(self.fahrenheitTf.text),
+                Utils.roundToSpecifiedDecimalPlaces(self.kelvinTf.text)
+            ]
+            
+            self.temperature.historyString2DArray.append(history)
+            Utils.defaults.set(temperature.historyString2DArray, forKey: "TemparatureHistory")
+            showToast("Conversion saved!")
+        }
+        print("before save:", temperature.historyString2DArray)
     }
 }
