@@ -20,11 +20,12 @@
 		379D86DD25FEC79B00FEACD1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86DC25FEC79B00FEACD1 /* Temperature.swift */; };
 		37C2FF8126012ED2005392FE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C2FF8026012ED2005392FE /* Speed.swift */; };
 		37CBC0BD26014D4C00D1F3FE /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CBC0BC26014D4C00D1F3FE /* Length.swift */; };
+		37CBC0C026016D7600D1F3FE /* LiquidVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CBC0BF26016D7600D1F3FE /* LiquidVolume.swift */; };
 		37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */; };
 		37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */; };
 		37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D425DDD3EF003B663F /* SpeedViewController.swift */; };
 		37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D725DDD40E003B663F /* WeightViewController.swift */; };
-		37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274DA25DDD423003B663F /* VolumeViewController.swift */; };
+		37E274DB25DDD423003B663F /* LiquidVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274DA25DDD423003B663F /* LiquidVolumeViewController.swift */; };
 		37E274DE25DDD435003B663F /* LengthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274DD25DDD435003B663F /* LengthViewController.swift */; };
 		37E274E925DDD704003B663F /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274E725DDD704003B663F /* CustomKeyboard.swift */; };
 		37E274EA25DDD704003B663F /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E274E825DDD704003B663F /* CustomKeyboard.xib */; };
@@ -46,11 +47,12 @@
 		379D86DC25FEC79B00FEACD1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		37C2FF8026012ED2005392FE /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 		37CBC0BC26014D4C00D1F3FE /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
+		37CBC0BF26016D7600D1F3FE /* LiquidVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidVolume.swift; sourceTree = "<group>"; };
 		37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		37E274D425DDD3EF003B663F /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		37E274D725DDD40E003B663F /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
-		37E274DA25DDD423003B663F /* VolumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeViewController.swift; sourceTree = "<group>"; };
+		37E274DA25DDD423003B663F /* LiquidVolumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidVolumeViewController.swift; sourceTree = "<group>"; };
 		37E274DD25DDD435003B663F /* LengthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthViewController.swift; sourceTree = "<group>"; };
 		37E274E725DDD704003B663F /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
 		37E274E825DDD704003B663F /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
@@ -105,7 +107,7 @@
 				372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */,
 				37E274D425DDD3EF003B663F /* SpeedViewController.swift */,
 				37E274D725DDD40E003B663F /* WeightViewController.swift */,
-				37E274DA25DDD423003B663F /* VolumeViewController.swift */,
+				37E274DA25DDD423003B663F /* LiquidVolumeViewController.swift */,
 				37E274DD25DDD435003B663F /* LengthViewController.swift */,
 				37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */,
 				37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */,
@@ -131,6 +133,7 @@
 				379D86DC25FEC79B00FEACD1 /* Temperature.swift */,
 				37C2FF8026012ED2005392FE /* Speed.swift */,
 				37CBC0BC26014D4C00D1F3FE /* Length.swift */,
+				37CBC0BF26016D7600D1F3FE /* LiquidVolume.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,7 +220,8 @@
 			files = (
 				37E274E925DDD704003B663F /* CustomKeyboard.swift in Sources */,
 				379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */,
-				37E274DB25DDD423003B663F /* VolumeViewController.swift in Sources */,
+				37E274DB25DDD423003B663F /* LiquidVolumeViewController.swift in Sources */,
+				37CBC0C026016D7600D1F3FE /* LiquidVolume.swift in Sources */,
 				374B0C8B25FFE557007C1E04 /* Utils.swift in Sources */,
 				37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */,
 				37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */,

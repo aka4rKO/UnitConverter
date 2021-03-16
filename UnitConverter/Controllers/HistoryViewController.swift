@@ -75,7 +75,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         case TabbarItems.liquidVolume.rawValue:
             let history = Utils.defaults.object(forKey: "LiquidVolumeHistory") as? [[String]] ?? [[String]]()
             self.data = history.suffix(5)
-            self.dataHeadings = [] //LiquidVolume.fields
+            self.dataHeadings = LiquidVolume.fields
         case TabbarItems.length.rawValue:
             let history = Utils.defaults.object(forKey: "LengthHistory") as? [[String]] ?? [[String]]()
             self.data = history.suffix(5)
