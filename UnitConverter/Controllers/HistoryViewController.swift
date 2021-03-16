@@ -65,21 +65,25 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         switch self.segmentedControl.selectedSegmentIndex {
         case TabbarItems.weight.rawValue:
-            self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"]]
-            self.dataHeadings = ["JH", "QW", "RR"]
+            let history = Utils.defaults.object(forKey: "WeightHistory") as? [[String]] ?? [[String]]()
+            self.data = history.suffix(5)
+            self.dataHeadings = [] //Weight.fields
         case TabbarItems.temperature.rawValue:
             let history = Utils.defaults.object(forKey: "TemparatureHistory") as? [[String]] ?? [[String]]()
             self.data = history.suffix(5)
             self.dataHeadings = Temperature.fields
         case TabbarItems.liquidVolume.rawValue:
-            self.data = [["0,0", "0,1", "0,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"], ["1,0", "1,1", "1,2"]]
-            self.dataHeadings = ["AL", "HG", "TM"]
+            let history = Utils.defaults.object(forKey: "LiquidVolumeHistory") as? [[String]] ?? [[String]]()
+            self.data = history.suffix(5)
+            self.dataHeadings = [] //LiquidVolume.fields
         case TabbarItems.length.rawValue:
-            self.data = [["0,0", "0,1", "0,2", "0,5"]]
-            self.dataHeadings = ["UY", "CS", "LO", "II"]
+            let history = Utils.defaults.object(forKey: "LengthHistory") as? [[String]] ?? [[String]]()
+            self.data = history.suffix(5)
+            self.dataHeadings = Length.fields
         case TabbarItems.speed.rawValue:
-            self.data = []
-            self.dataHeadings = []
+            let history = Utils.defaults.object(forKey: "SpeedHistory") as? [[String]] ?? [[String]]()
+            self.data = history.suffix(5)
+            self.dataHeadings = Speed.fields
         default:
             self.data = []
             self.dataHeadings = []

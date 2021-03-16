@@ -18,6 +18,8 @@
 		3769CA32260053FA00502052 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769CA31260053FA00502052 /* UIViewController+Toast.swift */; };
 		379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */; };
 		379D86DD25FEC79B00FEACD1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86DC25FEC79B00FEACD1 /* Temperature.swift */; };
+		37C2FF8126012ED2005392FE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C2FF8026012ED2005392FE /* Speed.swift */; };
+		37CBC0BD26014D4C00D1F3FE /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CBC0BC26014D4C00D1F3FE /* Length.swift */; };
 		37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */; };
 		37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */; };
 		37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E274D425DDD3EF003B663F /* SpeedViewController.swift */; };
@@ -42,6 +44,8 @@
 		3769CA31260053FA00502052 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		379D86DC25FEC79B00FEACD1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		37C2FF8026012ED2005392FE /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		37CBC0BC26014D4C00D1F3FE /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
 		37DAEF7325FC1E3C005779C2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		37DAEF7625FC4ACF005779C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		37E274D425DDD3EF003B663F /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				379D86DC25FEC79B00FEACD1 /* Temperature.swift */,
+				37C2FF8026012ED2005392FE /* Speed.swift */,
+				37CBC0BC26014D4C00D1F3FE /* Length.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 				37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */,
 				37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */,
 				37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */,
+				37C2FF8126012ED2005392FE /* Speed.swift in Sources */,
 				3718804E25D9D11B002E0B77 /* ViewController.swift in Sources */,
 				37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */,
 				3769CA32260053FA00502052 /* UIViewController+Toast.swift in Sources */,
@@ -224,6 +231,7 @@
 				3718804C25D9D11B002E0B77 /* SceneDelegate.swift in Sources */,
 				37E274DE25DDD435003B663F /* LengthViewController.swift in Sources */,
 				372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */,
+				37CBC0BD26014D4C00D1F3FE /* Length.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
