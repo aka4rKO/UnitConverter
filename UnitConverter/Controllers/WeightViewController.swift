@@ -153,7 +153,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
                 let stonePound = (self.weight.pound).truncatingRemainder(dividingBy: 14)
                 self.weight.stone = Utils.roundToSpecifiedDecimalPlaces(stone)
                 self.weight.stonePoundRemainder = Utils.roundToSpecifiedDecimalPlaces(stonePound)
-                
+
                 self.kilogramTf.text = "\(self.weight.kilogram)"
                 self.gramTf.text = "\(self.weight.gram)"
                 self.ounceTf.text = "\(self.weight.ounce)"
