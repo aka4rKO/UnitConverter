@@ -3,6 +3,7 @@
 //  UnitConverter
 //
 //  Created by user188399 on 3/14/21.
+//  Some of the code in this file was got from stackoverflow.
 //
 
 import Foundation

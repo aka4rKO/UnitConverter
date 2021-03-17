@@ -3,6 +3,8 @@
 //  UnitConverter
 //
 //  Created by user188399 on 3/15/21.
+//  Some of the code in this file was reffered from the youtube video below:
+//  https://www.youtube.com/watch?v=0M9g_w6MSiM
 //
 
 import Foundation

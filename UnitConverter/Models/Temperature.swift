@@ -3,6 +3,8 @@
 //  UnitConverter
 //
 //  Created by user188399 on 3/14/21.
+//  Some of the code in this file was taken from the following repo:
+//  https://github.com/wdevon99/IOS-Unit-Convertor.git
 //
 
 import Foundation
