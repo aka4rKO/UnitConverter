@@ -14,6 +14,7 @@
 		3718805325D9D11C002E0B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3718805225D9D11C002E0B77 /* Assets.xcassets */; };
 		3718805625D9D11C002E0B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3718805425D9D11C002E0B77 /* LaunchScreen.storyboard */; };
 		372277D525DC1CE400FE4F3B /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */; };
+		372C44E92601D3E50004B735 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372C44E82601D3E50004B735 /* Weight.swift */; };
 		374B0C8B25FFE557007C1E04 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B0C8A25FFE557007C1E04 /* Utils.swift */; };
 		3769CA32260053FA00502052 /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769CA31260053FA00502052 /* UIViewController+Toast.swift */; };
 		379D86DA25FEBC8200FEACD1 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */; };
@@ -41,6 +42,7 @@
 		3718805525D9D11C002E0B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3718805725D9D11C002E0B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372277D425DC1CE400FE4F3B /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		372C44E82601D3E50004B735 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		374B0C8A25FFE557007C1E04 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		3769CA31260053FA00502052 /* UIViewController+Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		379D86D925FEBC8200FEACD1 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				37C2FF8026012ED2005392FE /* Speed.swift */,
 				37CBC0BC26014D4C00D1F3FE /* Length.swift */,
 				37CBC0BF26016D7600D1F3FE /* LiquidVolume.swift */,
+				372C44E82601D3E50004B735 /* Weight.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				37DAEF7725FC4ACF005779C2 /* SettingsViewController.swift in Sources */,
 				37E274D825DDD40E003B663F /* WeightViewController.swift in Sources */,
 				37DAEF7425FC1E3C005779C2 /* HistoryViewController.swift in Sources */,
+				372C44E92601D3E50004B735 /* Weight.swift in Sources */,
 				37C2FF8126012ED2005392FE /* Speed.swift in Sources */,
 				3718804E25D9D11B002E0B77 /* ViewController.swift in Sources */,
 				37E274D525DDD3EF003B663F /* SpeedViewController.swift in Sources */,

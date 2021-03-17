@@ -67,7 +67,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         case TabbarItems.weight.rawValue:
             let history = Utils.defaults.object(forKey: "WeightHistory") as? [[String]] ?? [[String]]()
             self.data = history.suffix(5)
-            self.dataHeadings = [] //Weight.fields
+            self.dataHeadings = Weight.fields
         case TabbarItems.temperature.rawValue:
             let history = Utils.defaults.object(forKey: "TemparatureHistory") as? [[String]] ?? [[String]]()
             self.data = history.suffix(5)

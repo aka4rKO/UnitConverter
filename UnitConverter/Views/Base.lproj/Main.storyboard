@@ -38,13 +38,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjr-l2-f9g">
-                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="591"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Say-Mr-lxD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="378.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="347.66666666666669"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-d4-1jn">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="378.33333333333326"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="347.66666666666669"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-SB-Kmb">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="596.33333333333337"/>
@@ -219,7 +219,7 @@ CEtpbG9tZXRyZSBTdGFjayBWaWV3A
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmh-kf-lwG" customClass="CustomKeyboard" customModule="UnitConverter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="378.33333333333326" width="414" height="264.66666666666674"/>
+                                        <rect key="frame" x="0.0" y="347.66666666666669" width="414" height="243.33333333333331"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -924,6 +924,9 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                                                 <rect key="frame" x="0.0" y="28.333333333333343" width="374" height="34"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
+                                                                                <connections>
+                                                                                    <action selector="onTfValueChanged:" destination="55G-i6-ZdL" eventType="editingChanged" id="K7k-yM-yGk"/>
+                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -936,10 +939,13 @@ CEtpbG9tZXRyZXMgcGVyIEhvdXIgU3RhY2sgVmlldw
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Y3-Dx-Qz5">
+                                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Y3-Dx-Qz5">
                                                                                 <rect key="frame" x="0.0" y="28.333333333333314" width="374" height="34"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
+                                                                                <connections>
+                                                                                    <action selector="onTfValueChanged:" destination="55G-i6-ZdL" eventType="editingChanged" id="TFb-QH-KRh"/>
+                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                         <string key="userLabel" base64-UTF8="YES">
@@ -955,10 +961,13 @@ CEdyYW0gU3RhY2sgVmlldw
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7O-lm-PEf">
+                                                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7O-lm-PEf">
                                                                                 <rect key="frame" x="0.0" y="28.333333333333314" width="374" height="34"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
+                                                                                <connections>
+                                                                                    <action selector="onTfValueChanged:" destination="55G-i6-ZdL" eventType="editingChanged" id="osg-yo-SHK"/>
+                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -971,10 +980,13 @@ CEdyYW0gU3RhY2sgVmlldw
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PoD-3r-wdi">
+                                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PoD-3r-wdi">
                                                                                 <rect key="frame" x="0.0" y="28.333333333333314" width="374" height="34"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
+                                                                                <connections>
+                                                                                    <action selector="onTfValueChanged:" destination="55G-i6-ZdL" eventType="editingChanged" id="9nY-ay-3QY"/>
+                                                                                </connections>
                                                                             </textField>
                                                                         </subviews>
                                                                     </stackView>
@@ -990,10 +1002,13 @@ CEdyYW0gU3RhY2sgVmlldw
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3P-sj-U7D">
+                                                                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3P-sj-U7D">
                                                                                         <rect key="frame" x="0.0" y="28.333333333333371" width="182" height="34"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                         <textInputTraits key="textInputTraits"/>
+                                                                                        <connections>
+                                                                                            <action selector="onTfValueChanged:" destination="55G-i6-ZdL" eventType="editingChanged" id="cgh-3t-peq"/>
+                                                                                        </connections>
                                                                                     </textField>
                                                                                 </subviews>
                                                                             </stackView>
@@ -1006,10 +1021,13 @@ CEdyYW0gU3RhY2sgVmlldw
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
-                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-Yq-uA7">
+                                                                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ea-Yq-uA7">
                                                                                         <rect key="frame" x="0.0" y="28.333333333333371" width="182" height="34"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                         <textInputTraits key="textInputTraits"/>
+                                                                                        <connections>
+                                                                                            <action selector="onTfValueChanged:" destination="55G-i6-ZdL" eventType="editingChanged" id="e0Q-Qv-qB9"/>
+                                                                                        </connections>
                                                                                     </textField>
                                                                                 </subviews>
                                                                             </stackView>
@@ -1075,11 +1093,16 @@ CEdyYW0gU3RhY2sgVmlldw
                     </view>
                     <navigationItem key="navigationItem" title="Weight" id="pWT-QS-HWV">
                         <barButtonItem key="backBarButtonItem" title=" " id="Gze-0F-TRg"/>
-                        <barButtonItem key="leftBarButtonItem" title="Save" id="zvi-fh-O0m"/>
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="zvi-fh-O0m">
+                            <connections>
+                                <action selector="saveBtn:" destination="55G-i6-ZdL" id="wKB-N0-bw8"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem image="clock.arrow.circlepath" catalog="system" id="lYe-qX-Jmb">
                                 <connections>
-                                    <segue destination="trc-W6-djJ" kind="show" id="ICo-B6-1dS"/>
+                                    <action selector="historyTapped:" destination="55G-i6-ZdL" id="LS3-oE-tr1"/>
+                                    <segue destination="trc-W6-djJ" kind="show" identifier="WeightVCToHistoryVC" id="ICo-B6-1dS"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="gearshape" catalog="system" id="bPQ-fj-YIc">
@@ -1090,7 +1113,13 @@ CEdyYW0gU3RhY2sgVmlldw
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="gramTf" destination="5Y3-Dx-Qz5" id="AgL-8s-r3s"/>
                         <outlet property="keyboardView" destination="WQG-Ce-JPA" id="DCD-LT-TGe"/>
+                        <outlet property="kilogramTf" destination="irF-Gz-dQk" id="rW5-IL-Fzf"/>
+                        <outlet property="ounceTf" destination="o7O-lm-PEf" id="Dzw-jY-Bqf"/>
+                        <outlet property="poundTf" destination="PoD-3r-wdi" id="Hyp-He-Wpe"/>
+                        <outlet property="stonePoundRemTf" destination="4ea-Yq-uA7" id="95R-PP-wi9"/>
+                        <outlet property="stoneTf" destination="K3P-sj-U7D" id="zWZ-1y-G9Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LpH-da-PMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1351,7 +1380,7 @@ CExpdHJlIFN0YWNrIFZpZXc
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ejl-wU-6bA"/>
-        <segue reference="d9t-Fm-Y9t"/>
+        <segue reference="ICo-B6-1dS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
