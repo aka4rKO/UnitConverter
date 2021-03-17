@@ -11,7 +11,7 @@ import UIKit
 extension UIViewController {
     
     func showToast(_ message: String) {
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.width / 2 - 125, y: self.view.frame.height * 0.8, width: 250, height: 40))
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.width / 2 - 125, y: self.view.frame.height * 0.85, width: 250, height: 40))
         toastLabel.textAlignment = .center
         toastLabel.backgroundColor = .black
         toastLabel.textColor = .white

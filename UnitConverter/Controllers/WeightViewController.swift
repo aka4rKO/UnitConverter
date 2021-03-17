@@ -13,7 +13,6 @@ enum WeightUnits: Int {
 
 class WeightViewController: UIViewController, UITextFieldDelegate {
 
-    
     @IBOutlet weak var kilogramTf: UITextField!
     @IBOutlet weak var gramTf: UITextField!
     @IBOutlet weak var ounceTf: UITextField!
@@ -145,21 +144,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
                 self.stoneTf.text = "\(Int(self.weight.stone))"
                 self.stonePoundRemTf.text = "\(self.weight.stonePoundRemainder)"
             case .stonePoundRemainder:
-                self.weight.kilogram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 2.205)
-                self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 454)
-                self.weight.ounce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 16)
-                self.weight.pound = doubleTextFieldValue
-                let stone = (self.weight.pound / 14).rounded(.towardZero)
-                let stonePound = (self.weight.pound).truncatingRemainder(dividingBy: 14)
-                self.weight.stone = Utils.roundToSpecifiedDecimalPlaces(stone)
-                self.weight.stonePoundRemainder = Utils.roundToSpecifiedDecimalPlaces(stonePound)
-
-                self.kilogramTf.text = "\(self.weight.kilogram)"
-                self.gramTf.text = "\(self.weight.gram)"
-                self.ounceTf.text = "\(self.weight.ounce)"
-                self.poundTf.text = "\(self.weight.pound)"
-                self.stoneTf.text = "\(self.weight.stone)"
-                self.stonePoundRemTf.text = "\(self.weight.stonePoundRemainder)"
+                print("Only for display purposes!")
             }
         } else {
             self.emptyAllTfs()
