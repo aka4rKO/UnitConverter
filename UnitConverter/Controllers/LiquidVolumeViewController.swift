@@ -67,20 +67,20 @@ class LiquidVolumeViewController: UIViewController, UITextFieldDelegate {
             switch LiquidVolumeUnits(rawValue: sender.tag)! {
             case .ukGallon:
                 self.liquidVolume.ukGallon = doubleTextFieldValue
-                self.liquidVolume.litre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 4.546)
+                self.liquidVolume.litre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 4.54609)
                 self.liquidVolume.ukPint = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 8)
-                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 154)
-                self.liquidVolume.millilitre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 4546)
+                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 153.722)
+                self.liquidVolume.millilitre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 4546.09)
                 
                 self.litreTf.text = "\(self.liquidVolume.litre)"
                 self.ukPintTf.text = "\(self.liquidVolume.ukPint)"
                 self.fluidOunceTf.text = "\(self.liquidVolume.fluidOunce)"
                 self.millilitreTf.text = "\(self.liquidVolume.millilitre)"
             case .litre:
-                self.liquidVolume.ukGallon = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 4.546)
+                self.liquidVolume.ukGallon = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 4.54609)
                 self.liquidVolume.litre = doubleTextFieldValue
-                self.liquidVolume.ukPint = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.76)
-                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 33.814)
+                self.liquidVolume.ukPint = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.75975)
+                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 35.1951)
                 self.liquidVolume.millilitre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1000)
                 
                 self.ukGallonTf.text = "\(self.liquidVolume.ukGallon)"
@@ -89,9 +89,9 @@ class LiquidVolumeViewController: UIViewController, UITextFieldDelegate {
                 self.millilitreTf.text = "\(self.liquidVolume.millilitre)"
             case .ukPint:
                 self.liquidVolume.ukGallon = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 8)
-                self.liquidVolume.litre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.76)
+                self.liquidVolume.litre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.75975)
                 self.liquidVolume.ukPint = doubleTextFieldValue
-                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 19.215)
+                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 20)
                 self.liquidVolume.millilitre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 568)
                 
                 self.ukGallonTf.text = "\(self.liquidVolume.ukGallon)"
@@ -99,21 +99,21 @@ class LiquidVolumeViewController: UIViewController, UITextFieldDelegate {
                 self.fluidOunceTf.text = "\(self.liquidVolume.fluidOunce)"
                 self.millilitreTf.text = "\(self.liquidVolume.millilitre)"
             case .fluidOunce:
-                self.liquidVolume.ukGallon = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 154)
-                self.liquidVolume.litre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 33.814)
-                self.liquidVolume.ukPint = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 19.215)
+                self.liquidVolume.ukGallon = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 153.722)
+                self.liquidVolume.litre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 35.1951)
+                self.liquidVolume.ukPint = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 20)
                 self.liquidVolume.fluidOunce = doubleTextFieldValue
-                self.liquidVolume.millilitre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 29.574)
+                self.liquidVolume.millilitre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 28.4131)
                 
                 self.ukGallonTf.text = "\(self.liquidVolume.ukGallon)"
                 self.litreTf.text = "\(self.liquidVolume.litre)"
                 self.ukPintTf.text = "\(self.liquidVolume.ukPint)"
                 self.millilitreTf.text = "\(self.liquidVolume.millilitre)"
             case .millilitre:
-                self.liquidVolume.ukGallon = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 4546)
+                self.liquidVolume.ukGallon = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 4546.09)
                 self.liquidVolume.litre = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1000)
                 self.liquidVolume.ukPint = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 568)
-                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 29.574)
+                self.liquidVolume.fluidOunce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 28.4131)
                 self.liquidVolume.millilitre = doubleTextFieldValue
                 
                 self.ukGallonTf.text = "\(self.liquidVolume.ukGallon)"

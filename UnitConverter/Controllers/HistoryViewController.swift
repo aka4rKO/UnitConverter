@@ -8,7 +8,7 @@
 import UIKit
 
 enum TabbarItems: Int {
-    case weight, temperature, liquidVolume, length, speed
+    case weight, temperature, liquidVolume, length, speed, volume
 }
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -84,6 +84,10 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
             let history = Utils.defaults.object(forKey: "SpeedHistory") as? [[String]] ?? [[String]]()
             self.data = history.suffix(5)
             self.dataHeadings = Speed.fields
+        case TabbarItems.volume.rawValue:
+            let history = Utils.defaults.object(forKey: "VolumeHistory") as? [[String]] ?? [[String]]()
+            self.data = history.suffix(5)
+            self.dataHeadings = Volume.fields
         default:
             self.data = []
             self.dataHeadings = []

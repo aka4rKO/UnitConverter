@@ -72,7 +72,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
                 self.weight.kilogram = doubleTextFieldValue
                 self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1000)
                 self.weight.ounce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 35.274)
-                self.weight.pound = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 2.205)
+                self.weight.pound = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 2.20462)
                 let stone = (self.weight.pound / 14).rounded(.towardZero)
                 let stonePound = (self.weight.pound).truncatingRemainder(dividingBy: 14)
                 self.weight.stone = Utils.roundToSpecifiedDecimalPlaces(stone)
@@ -100,7 +100,7 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
                 self.stonePoundRemTf.text = "\(self.weight.stonePoundRemainder)"
             case .ounce:
                 self.weight.kilogram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 35.274)
-                self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 28.35)
+                self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 28.3495)
                 self.weight.ounce = doubleTextFieldValue
                 self.weight.pound = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 16)
                 let stone = (self.weight.pound / 14).rounded(.towardZero)
@@ -114,8 +114,8 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
                 self.stoneTf.text = "\(self.weight.stone)"
                 self.stonePoundRemTf.text = "\(self.weight.stonePoundRemainder)"
             case .pound:
-                self.weight.kilogram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 2.205)
-                self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 454)
+                self.weight.kilogram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 2.20462)
+                self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 453.592)
                 self.weight.ounce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 16)
                 self.weight.pound = doubleTextFieldValue
                 let stone = (self.weight.pound / 14).rounded(.towardZero)
@@ -129,8 +129,8 @@ class WeightViewController: UIViewController, UITextFieldDelegate {
                 self.stoneTf.text = "\(self.weight.stone)"
                 self.stonePoundRemTf.text = "\(self.weight.stonePoundRemainder)"
             case .stone:
-                self.weight.kilogram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 6.35)
-                self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 6350)
+                self.weight.kilogram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 6.35029)
+                self.weight.gram = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 6350.29)
                 self.weight.ounce = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 224)
                 self.weight.pound = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 14)
                 let stonePound = (self.weight.pound).truncatingRemainder(dividingBy: 14)

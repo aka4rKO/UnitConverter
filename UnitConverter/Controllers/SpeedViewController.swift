@@ -65,8 +65,8 @@ class SpeedViewController: UIViewController, UITextFieldDelegate {
             case .metresPerSecond:
                 self.speed.metresPerSecond = doubleTextFieldValue
                 self.speed.kilometresPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 3.6)
-                self.speed.milesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 2.237)
-                self.speed.nauticalMilesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.944)
+                self.speed.milesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 2.23694)
+                self.speed.nauticalMilesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.94384)
                 
                 self.kMetresPerHourTf.text = "\(self.speed.kilometresPerHour)"
                 self.milesPerHourTf.text = "\(self.speed.milesPerHour)"
@@ -74,25 +74,25 @@ class SpeedViewController: UIViewController, UITextFieldDelegate {
             case .kilometresPerHour:
                 self.speed.metresPerSecond = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 3.6)
                 self.speed.kilometresPerHour = doubleTextFieldValue
-                self.speed.milesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.609)
+                self.speed.milesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.60934)
                 self.speed.nauticalMilesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.852)
                 
                 self.metresPerSecTf.text = "\(self.speed.metresPerSecond)"
                 self.milesPerHourTf.text = "\(self.speed.milesPerHour)"
                 self.nMilesPerHourTf.text = "\(self.speed.nauticalMilesPerHour)"
             case .milesPerHour:
-                self.speed.metresPerSecond = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 2.237)
-                self.speed.kilometresPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.609)
+                self.speed.metresPerSecond = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 2.23694)
+                self.speed.kilometresPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.60934)
                 self.speed.milesPerHour = doubleTextFieldValue
-                self.speed.nauticalMilesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.151)
+                self.speed.nauticalMilesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.15078)
                 
                 self.metresPerSecTf.text = "\(self.speed.metresPerSecond)"
                 self.kMetresPerHourTf.text = "\(self.speed.kilometresPerHour)"
                 self.nMilesPerHourTf.text = "\(self.speed.nauticalMilesPerHour)"
             case .nauticalMilesPerHour:
-                self.speed.metresPerSecond = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.944)
+                self.speed.metresPerSecond = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue / 1.94384)
                 self.speed.kilometresPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.852)
-                self.speed.milesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.151)
+                self.speed.milesPerHour = Utils.roundToSpecifiedDecimalPlaces(doubleTextFieldValue * 1.15078)
                 self.speed.nauticalMilesPerHour = doubleTextFieldValue
                 
                 self.metresPerSecTf.text = "\(self.speed.metresPerSecond)"
